@@ -1,7 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
-import { search } from "../api/youtube";
 import VideoCard from "../component/VideoCard";
 import { useYoutubeApi } from "../context/YoutubeApiContext";
 
@@ -12,9 +11,13 @@ function Videos() {
     isLoading,
     error,
     data: videos,
-  } = useQuery(["videos", keyword], () => {
-    return youtube.search(keyword);
-  });
+  } = useQuery(
+    ["videos", keyword],
+    () => {
+      return youtube.search(keyword);
+    },
+    { staleTime: 1000 * 60 * 1 }
+  );
 
   return (
     <>
