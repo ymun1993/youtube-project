@@ -1,6 +1,6 @@
 # Youtube Project
 
-The Youtube website re-built using Google Youtube data API.\ 
+The Youtube website re-built using Google Youtube data API.<br>
 The responsive website that allows to search the video. 
 
 ## Features
