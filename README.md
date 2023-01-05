@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Youtube Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Youtube website re-built using Google Youtube data API. 
+The responsive website that allows to search the video. 
 
-## Available Scripts
-
-In the project directory, you can run:
+## Features
+* 
 
 ### `npm start`
 
